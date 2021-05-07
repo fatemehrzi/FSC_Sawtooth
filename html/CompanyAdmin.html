@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>SIVEQ Charity</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'> -->
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Superfish -->
+	<link rel="stylesheet" href="css/superfish.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<div id="fh5co-wrapper">
+		<div id="fh5co-page">
+			<div class="header-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-sm-6 text-left fh5co-link">
+							<a href="#">FAQ</a>
+							<a href="#">Contact</a>
+						</div>
+						<div class="col-md-6 col-sm-6 text-right fh5co-social">
+							<a href="#" class="grow"><i class="icon-facebook2"></i></a>
+							<a href="#" class="grow"><i class="icon-twitter2"></i></a>
+							<a href="#" class="grow"><i class="icon-instagram2"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<header id="fh5co-header-section" class="sticky-banner">
+				<div class="container">
+					<div class="nav-header">
+						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
+						<h1 id="fh5co-logo"><a href="index.html">SIVEQ</a></h1>
+						<!-- START #fh5co-menu-wrap -->
+						<nav id="fh5co-menu-wrap" role="navigation">
+							<ul class="sf-menu" id="fh5co-primary-menu">
+								<li class="active">
+									<a href="index.html">Home</a>
+								</li>
+								<li>
+									<a href="#" class="fh5co-sub-ddown">Product</a>
+									<ul class="fh5co-sub-menu">
+										<li><a href="#">Add Product</a></li>
+										<li><a href="#">View Product</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="fh5co-sub-ddown">Agents</a>
+									<ul class="fh5co-sub-menu">
+										<li><a href="SystemAdmin.html">System Admin</a></li>
+										<li><a href="CompanyAdmin.html">Company Admin</a></li>
+										<li><a href="Operator.html">Operator</a></li>
+										<li><a href="CA.html">Certification Authority</a></li>
+									</ul>
+								</li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="login.html" style="color: coral;">Login/Sign Up</a></li>
+
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+
+
+
+			<div class="fh5co-hero"
+				style="background: url(images/cover_bg_1.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+				<div class="desc animate-box">
+					<div class="container">
+						<ul class="nav nav-pills" style="background-color:rgba(255, 255, 255, 0.671);">
+							<li class="active"><a data-toggle="pill" href="#home">Create Field</a></li>
+							<li><a data-toggle="pill" href="#menu1" style="color: rgb(143, 142, 142);">Create Operator</a>
+							</li>
+						</ul>
+
+						<div class="tab-content">
+							<div id="home" class="tab-pane fade in active">
+								<div class="box" style="margin-top: 2rem;">
+									<div class="panel panel-default">
+										<div class="panel-heading">Create Field Form</div>
+										<div class="panel-body">
+											<form action="/action_page.php">
+												<div class="form-group">
+													<label for="description">Description</label>
+													<textarea class="form-control" rows="5" id="description"
+														placeholder="Enter a short description" name="description">
+													</textarea>
+												</div>
+												<div class="form-group">
+													<label for="description">Product Type</label>
+													<input type="text" class="form-control" id="product"
+														placeholder="Enter product type" name="product">
+												</div>
+												<div class="form-group">
+													<label for="description">Quantity</label>
+													<input type="text" class="form-control" id="quantity"
+														placeholder="Enter product quantity" name="quantity">
+												</div>
+												<div class="form-group">
+													<label for="description">Location</label>
+												</br>
+													<a onclick="getLocation()" style="cursor:pointer;">Add your Location</a>
+													<p id="location"></p>
+												</div>
+
+												<button type="submit" class="btn btn-default">Submit</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="menu1" class="tab-pane fade">
+								<div class="box" style="margin-top: 2rem;">
+									<div class="panel panel-default">
+										<div class="panel-heading">Create Operator Form</div>
+										<div class="panel-body">
+											<form action="/action_page.php">
+												<div class="form-group">
+													<label for="operator">Operator's public key</label>
+													<input type="text" class="form-control" id="admin"
+														placeholder="Enter Operator's public key" name="operator">
+												</div>
+												<div class="form-group">
+													<label for="description">Task</label>
+													<input type="text" class="form-control" id="task"
+														placeholder="Enter Operator Task" name="quantity">
+												</div>
+												<button type="submit" class="btn btn-default">Submit</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- end:header-top -->
+	<div id="fh5co-features">
+		<div class="container">
+			<div class="row">
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- fh5co-blog-section -->
+	<footer>
+		<div id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 text-center">
+						<p class="fh5co-social-icons">
+							<a href="#"><i class="icon-twitter2"></i></a>
+							<a href="#"><i class="icon-facebook2"></i></a>
+							<a href="#"><i class="icon-instagram"></i></a>
+							<a href="#"><i class="icon-dribbble2"></i></a>
+							<a href="#"><i class="icon-youtube"></i></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	</div>
+	<!-- END fh5co-page -->
+
+	</div>
+	<!-- END fh5co-wrapper -->
+	<script>
+		var x = document.getElementById("location");
+		
+		function getLocation() {
+		  if (navigator.geolocation) {
+			navigator.geolocation.getCurrentPosition(showPosition);
+		  } else { 
+			x.innerHTML = "Geolocation is not supported by this browser.";
+		  }
+		}
+		
+		function showPosition(position) {
+		  x.innerHTML = "Latitude: " + position.coords.latitude + 
+		  "<br>Longitude: " + position.coords.longitude;
+		}
+		</script>
+	<!-- jQuery -->
+
+
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/sticky.js"></script>
+
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Superfish -->
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.js"></script>
+
+	<!-- Main JS -->
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
